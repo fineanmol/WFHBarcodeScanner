@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WfhBarcodeReaderSample</string>
+    <string-array name="scanner_modes">
+        <item>Single - Auto</item>
+        <item>Single - Manual</item>
+        <item>Multiple</item>
+    </string-array>
+</resources>
