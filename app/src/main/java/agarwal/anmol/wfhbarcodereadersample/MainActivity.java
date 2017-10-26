@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         modeSpinner = (Spinner) findViewById(R.id.scanner_mode);
         scanImage=(Button)findViewById(R.id.photo_button);
         imageHolder=(ImageView)findViewById(R.id.captured_photo);
-
+        
 
         ArrayAdapter adapter = new SpinnerAdapter(this, R.layout.simple_spinner_item);
         modeSpinner.setAdapter(adapter);
@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         });
-
 
     }
 
@@ -372,9 +371,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return view;
         }
     }
-
-
-
-
-
 }

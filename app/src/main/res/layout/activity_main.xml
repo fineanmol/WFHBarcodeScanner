@@ -29,13 +29,15 @@
         android:layout_centerHorizontal="true" />
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/barcode_types"
-        android:layout_above="@+id/scan_dialog"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/scrollView2">
+        android:id="@+id/scrollView2"
+        android:layout_above="@+id/photo_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <TextView
             android:id="@+id/result"
@@ -59,8 +61,9 @@
 
 
         android:layout_above="@+id/scan_dialog"
-        android:layout_toRightOf="@+id/scrollView2"
-        android:layout_toEndOf="@+id/scrollView2" />
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
     <Button
