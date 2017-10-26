@@ -1,6 +1,6 @@
-# MVBarcodeReader
-[ ![Download](https://api.bintray.com/packages/iammehedi/MVBarcodeReader/online.devliving%3Amvbarcodereader/images/download.svg) ](https://bintray.com/iammehedi/MVBarcodeReader/online.devliving%3Amvbarcodereader/_latestVersion)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MVBarcodeReader-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/4457)
+# WFHBarcodeReader
+[ ![Download](https://api.bintray.com/packages/iammehedi/WFHBarcodeReader/online.devliving%3AWFHbarcodereader/images/download.svg) ](https://bintray.com/iammehedi/WFHBarcodeReader/online.devliving%3AWFHbarcodereader/_latestVersion)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-WFHBarcodeReader-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/4457)
 
 A Barcode scanning library for Android. Uses the Google Play Services' mobile vision api for barcode detection.
 
@@ -8,8 +8,8 @@ A Barcode scanning library for Android. Uses the Google Play Services' mobile vi
 ### Maven
 ```xml
 <dependency>
-  <groupId>online.devliving</groupId>
-  <artifactId>mvbarcodereader</artifactId>
+  <groupId>agarwal.anmol</groupId>
+  <artifactId>WFHbarcodereader</artifactId>
   <version>LATEST_VERSION</version>
   <type>pom</type>
 </dependency>
@@ -17,7 +17,7 @@ A Barcode scanning library for Android. Uses the Google Play Services' mobile vi
 
 ### Gradle
 ```groovy
-compile 'online.devliving:mvbarcodereader:LATEST_VERSION'
+compile 'agarwal.anmol:WFHbarcodereader:LATEST_VERSION'
 ```
 Add following dependencies to your app's gradle file
 ```groovy
@@ -40,7 +40,7 @@ You can view [this link](https://developers.google.com/vision/barcodes-overview)
 ### Use the standalone scanner
 launch the scanner from your `Activity` like this:
 ```java
-new MVBarcodeScanner.Builder()
+new WFHBarcodeScanner.Builder()
                     .setScanningMode(mMode)
                     .setFormats(mFormats)
                     .build()
@@ -52,10 +52,10 @@ if (requestCode == REQ_CODE) {
             if (resultCode == RESULT_OK && data != null
                     && data.getExtras() != null) {
               
-                if (data.getExtras().containsKey(MVBarcodeScanner.BarcodeObject)) {
-                    Barcode mBarcode = data.getParcelableExtra(MVBarcodeScanner.BarcodeObject);
-                } else if (data.getExtras().containsKey(MVBarcodeScanner.BarcodeObjects)) {
-                    List<Barcode> mBarcodes = data.getParcelableArrayListExtra(MVBarcodeScanner.BarcodeObjects);
+                if (data.getExtras().containsKey(WFHBarcodeScanner.BarcodeObject)) {
+                    Barcode mBarcode = data.getParcelableExtra(WFHBarcodeScanner.BarcodeObject);
+                } else if (data.getExtras().containsKey(WFHBarcodeScanner.BarcodeObjects)) {
+                    List<Barcode> mBarcodes = data.getParcelableArrayListExtra(WFHBarcodeScanner.BarcodeObjects);
                 }
             }
         }
@@ -64,8 +64,8 @@ if (requestCode == REQ_CODE) {
 ### Use the scanner fragment
 You can use the `BarcodeCaptureFragment` to scan barcodes. Just add the fragment to your `Activity`
 ```java
-MVBarcodeScanner.ScanningMode mode = null;
-@MVBarcodeScanner.BarCodeFormat int[] formats = null;
+WFHBarcodeScanner.ScanningMode mode = null;
+@WFHBarcodeScanner.BarCodeFormat int[] formats = null;
 
 BarcodeCaptureFragment fragment = BarcodeCaptureFragment.instantiate(mode, formats);
 getSupportFragmentManager().beginTransaction()
