@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tempArray = items.toArray(tempArray);
         barcodeTypeItems = tempArray;
     }
-    Person person;
+   // Person person;
     boolean[] checkedStates = new boolean[TYPE_MAP.size()];
 
     @Override
@@ -287,11 +287,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @WfhBarcodeScanner.BarCodeFormat
     int getFormatForValue(String value) {
-        for (Map.Entry<Integer, String> entry : TYPE_MAP.entrySet()) {
-            if (entry.getValue().equals(value)) return entry.getKey();
-        }
+   //     for (Map.Entry<Integer, String> entry : TYPE_MAP.entrySet()) {
+   //         if (entry.getValue().equals(value)) return entry.getKey();
+  //      }
 
-        return -1;
+        return Barcode.ALL_FORMATS;
     }
 
     @Override

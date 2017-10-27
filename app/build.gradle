@@ -31,7 +31,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.koushikdutta.async:androidasync:2.+'
-    compile'org.apache.httpcomponents:httpcore:4.4.1'
-    compile'org.apache.httpcomponents:httpclient:4.5'
+
     compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }
