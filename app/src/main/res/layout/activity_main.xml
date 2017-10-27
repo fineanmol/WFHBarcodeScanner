@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorgreen"
     tools:context="agarwal.anmol.wfhbarcodereadersample.MainActivity">
 
     <Spinner
@@ -58,12 +59,13 @@
         android:text="don't have Barcode , click"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
+        android:background="@drawable/roundbutton"
         android:layout_above="@+id/scan_dialog"
         android:layout_toEndOf="@+id/scrollView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#ffff"
+        />
 
 
     <Button
@@ -71,13 +73,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Scan barcode with Dialog"
-        android:layout_above="@+id/scan" />
+        android:layout_above="@+id/scan"
+        android:background="@drawable/roundbutton"
+        android:textColor="#ffff"/>
     <Button
         android:id="@+id/scan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Scan Barcode"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundbutton"
+        android:textColor="#ffff"
+        />
 
     <Button
         android:id="@+id/btnupload"
@@ -88,5 +95,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:text="Analyse Product" />
+        android:text="Analyse Product"
+        android:textColor="#ffff"
+        android:background="@drawable/roundbutton"/>
 </RelativeLayout>
