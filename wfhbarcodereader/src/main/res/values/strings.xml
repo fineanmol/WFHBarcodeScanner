@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WfhBarcodeReaderSample</string>
+    <string name="app_name">Freshness Meter</string>
     <string name="ok">OK</string>
     <string name="permission_camera_rationale">Access to the camera is needed for barcode detection</string>
     <string name="perm_required">Permission Required</string>

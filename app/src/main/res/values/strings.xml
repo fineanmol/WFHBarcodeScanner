@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WfhBarcodeReaderSample</string>
+    <string name="app_name">Freshness Meter</string>
     <string-array name="scanner_modes">
         <item>Single - Auto</item>
         <item>Single - Manual</item>

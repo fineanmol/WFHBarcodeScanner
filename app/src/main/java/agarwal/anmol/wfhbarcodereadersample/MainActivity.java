@@ -121,7 +121,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imageHolder = (ImageView) findViewById(R.id.captured_photo);
         btnPost = (Button)findViewById(R.id.btnupload);
         // add click listener to Button "POST"
-        btnPost.setOnClickListener(this);
+        btnPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(MainActivity.this,AnalyseProduct.class);
+                startActivity(i);
+            }
+        });
 
 
 
